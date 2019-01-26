@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="nn.js"></script>
+    <script src="matrix.js"></script>
+	<title></title>
+</head>
+<body>
+	<input type="button" onclick="train()" value="Train">
+	<input type="button" onclick="test('rainbow')" value="Test(rainbow)">
+	<input type="button" onclick="test('cat')" value="Test(cat)">
+	<input type="button" onclick="test('train')" value="Test(train)">
+	<input type="button" onclick="accuracy()" value="Accuracy">
+	<input type="button" onclick="guess()" value="Guess">
+	<input type="button" onclick="cleardisplay()" value="Clear">
+
+	<h1 id="c">Cat count= </h1>
+	<h1 id="t">Train count= </h1>
+	<h1 id="r">Rainbow count= </h1>
+	<h1 id="accuracy">Accuracy= </h1>
+</body>
+</html>
